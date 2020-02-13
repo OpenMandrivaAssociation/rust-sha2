@@ -1,0 +1,30 @@
+--- sha2-0.8.1/Cargo.toml	2020-01-06T02:55:40+00:00
++++ sha2-0.8.1/Cargo.toml	2020-01-07T18:11:28.488572+00:00
+@@ -29,26 +29,17 @@
+ [dependencies.fake-simd]
+ version = "0.1"
+ 
+-[dependencies.libc]
+-version = "0.2"
+-optional = true
+-
+ [dependencies.opaque-debug]
+ version = "0.2"
+ 
+-[dependencies.sha2-asm]
+-version = "0.5"
+-optional = true
+ [dev-dependencies.digest]
+ version = "0.8"
+ features = ["dev"]
+ 
+ [dev-dependencies.hex-literal]
+-version = "0.1"
++version = "0.2"
+ 
+ [features]
+-asm = ["sha2-asm"]
+-asm-aarch64 = ["asm", "libc"]
+ default = ["std"]
+ std = ["digest/std"]
+ [badges.travis-ci]
